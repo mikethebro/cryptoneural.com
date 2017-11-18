@@ -21,21 +21,23 @@
       </a>
       <nav>
         <ul>
-          <li><a href="index.html" class="selected">About</a></li>
+          <li><a href="index.html">About</a></li>
           <li><a href="projects.html">Results</a></li>
         </ul>
       </nav>
     </header>
+
     <div id="wrapper">
-      <section>
-        <div class="left">
-        <p>We did stuff</p>
-      </div>
-      <div class="right">
-        <p>it was dope</p>
-        
-      </div>
-      </section>
+       <section>
+        <p>Bitcoin results:</p>
+      <div id="chart"></div>
+      <script>
+      var data = [bitcoin_norm, predict];
+      Plotly.newPlot('chart', data);
+      </script>
+    </section>
+    </div>
+      
       <footer>
       </footer>
     </div>

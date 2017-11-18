@@ -1,0 +1,17 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="output_5_min.js"></script>
+  <title>Cryptocurrency Prediction</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;padding-top:20px;padding-bottom:20px;">Neural Networks for Cryptocurrencies</h1>
+
+  <div id="chart" style="height:150%;"></div>
+  <p style="text-align: center;">Bitcoin Price Trend</p>
+  <script>
+	var data = [bitcoin_norm, predict];
+	Plotly.newPlot('chart', data);
+  </script>
+</body>

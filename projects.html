@@ -9,9 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans" rel="stylesheet">
     <!-- my css code - comes after to override normalize.css -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- Plotly.js -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="output_5_min.js"></script>
   </head>
   <body>
     <header>
@@ -21,20 +18,31 @@
       </a>
       <nav>
         <ul>
-          <li><a href="index.html" class="selected">About</a></li>
-          <li><a href="projects.html">Results</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html" class="selected">Results</a></li>
         </ul>
       </nav>
     </header>
     <div id="wrapper">
       <section>
-        <div class="left">
-        <p>We did stuff</p>
-      </div>
-      <div class="right">
-        <p>it was dope</p>
-        
-      </div>
+        <ul id="gallery">
+          <!-- Scorpio Code -->
+          <li>
+            <a href="bitcoin-results.html">
+              <img src="img/bitcoin-results.png" alt="Bitcoin Results">
+              <p>Bitcoin Results</p>
+            </a>
+          </li> 
+
+          <!-- Project Iris -->
+          <li>
+            <a href="ethereum-results.html">
+              <img src="img/iris.png" alt="Ethereum Results">
+              <p>Ethereum Results</p>
+            </a>
+          </li> 
+          
+        </ul>
       </section>
       <footer>
       </footer>

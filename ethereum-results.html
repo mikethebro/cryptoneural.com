@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bitcoin Results</title>
+    <title>Ethereum Results</title>
     <!-- normalizing css code -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- font from Google -->
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Plotly.js -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="bitcoin_5_min.js"></script>
+    <script src="ethereum_5_min.js"></script>
   </head>
   <body>
     <header>
@@ -26,11 +26,11 @@
         </ul>
       </nav>
     </header>
-        <p style="text-align: center;">Bitcoin results</p>
+        <p style="text-align: center;">Ethereum results</p>
       <div id="chart" style="height=100%;"></div>
       <div id="chart-zoom" style="height=100%;"></div>
       <script>
-      var data = [bitcoin_norm, predict];
+      var data = [ethereum_norm, predict];
       var layout = {
       xaxis: {
         range: [0, 1116]

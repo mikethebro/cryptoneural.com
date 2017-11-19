@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Litecoin Results</title>
+    <!-- normalizing css code -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font from Google -->
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans" rel="stylesheet">
+    <!-- my css code - comes after to override normalize.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="neo_5_min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Cryptocurrency Prediction</h1>
+        <h2>Neural Networks with Tensorflow</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Results</a></li>
+        </ul>
+      </nav>
+    </header>
+        <p style="text-align: center;">Litecoin results</p>
+      <div id="chart" style="height=100%;"></div>
+      <div id="chart-zoom" style="height=100%;"></div>
+      <script>
+      var data = [litecoin_norm, predict];
+      var layout = {
+      xaxis: {
+        range: [0, 1116]
+      },
+      yaxis: {
+        range: [-0.0025, 0.0025]
+        }
+      };
+      Plotly.newPlot('chart', data);
+      Plotly.newPlot('chart-zoom', data, layout);
+      </script>
+      
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>
+<!-- entities: https://dev.w3.org/html5/html-author/charref -->
